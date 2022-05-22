@@ -1,0 +1,341 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    text-decoration:none;
+    outline:0;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    width:120rem;
+    max-width:100%;
+    margin:auto;
+
+}
+/* header section starts here */
+header nav .up-1{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.container-fluid1{
+    padding:1% 4%;
+    background-color:#2394e1;
+}
+#span-1,.span-2,#span-3{
+    margin-left:0.3rem;
+    color:white;
+}
+.fa-map,.fa-envelope,.fa-phone-flip{
+    color:#dfdd37;
+}
+@media screen and (max-width:600px){
+    .container-fluid1{
+        display:flex;
+        flex-direction: column;
+
+    }
+    .address-1,.address-2,.address-3{
+        padding:10px 0;
+    }
+    .container-fluid2{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+   .head-linking-div li:hover{
+         text-decoration:underline;
+   }
+   .achievement-section .achieve-1{
+       margin-top:26%;
+       
+   }
+   
+    
+}
+header{
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:10;
+    box-shadow:1px 1px 4px; 
+
+}
+.container-fluid2{
+    display:flex;
+    justify-content:space-between;
+    padding:1% 6%;
+    background-color:#fff;
+}
+.head-linking-div ul li{
+    display:inline-block;
+    margin-right:1rem;
+}
+.head-linking-div ul li a{
+    text-decoration:none;
+     color:black;
+
+}
+.fa-screwdriver-wrench{
+    color:#2394e1;
+}
+.container-fluid2 .span-4{
+    font-weight:500;
+    font-size:1.7rem;
+    margin-left:0.4rem;
+}
+/* header section ends here */
+/* main section starts here */
+#my_btn{
+    border:none;
+    padding:7px;
+    border:1px solid black;
+    background-color:#fff;
+    box-shadow:1px 0 1px;
+    transition:.4s ease-in-out;
+}
+.fix-section{
+    padding:4% 10%;
+
+}
+.second-column{
+    transform:translateY(121px);
+}
+#my_btn:hover{
+    background-color:#2394e1;
+}
+
+/* achievement section starts here */
+.achievement-section{
+    padding:3% 10%;
+    background-color:#f8f8f8;
+}
+
+
+.achievement-section .achieve-1{
+    display:flex;
+}
+.achievement.section .achieve-1 h5{
+    font-weight:bold;
+}
+/* achievement section ends here  */
+/* quality section starts here */
+
+.quality-section .my_btn2{
+    border:none;
+    padding:7px 19px;
+    border:1px solid black;
+}
+.quality-section{
+    padding:4% 10%;
+}
+/* quality section ends here */
+/* our services section starts here */
+.our-services-section .card .card-body{
+ text-align:center;
+ border:1px solid black;
+ cursor:pointer;
+ transition:.4s ease-in-out;
+ box-shadow:0.1rem 0.1rem 0.2rem #cecece;
+}
+.our-services-section .card .card-body:hover{
+    background-color:#41405a;
+    color:white;
+}
+.our-services-section{
+    padding:4% 10%;
+}
+.our-services-section h3{
+    font-weight:bold;
+    text-align:center;
+}
+.service-span{
+    color:#2394e1
+}
+/* our services section ends here */
+/* our gallery section starts here */
+.our-gallery{
+    padding:4% 10%;
+    
+}
+.our-gallery h3{
+    text-align:center;
+}
+.our-gallery .cover{
+    overflow:hidden;
+}
+.our-gallery .cover img{
+  transition:transform .4s;
+  cursor:pointer;
+}
+.our-gallery .cover img:hover{
+    transform:scale(1.1);
+}
+/* our gallery section ends here */
+/* choose us section starts here */
+.choose_us .card .card-body{
+    text-align:center;
+    border:1px solid black;
+    box-shadow:0.1rem 0.1rem 0.2rem #cecece;
+    transition:.4s ease-in-out;
+    cursor:pointer;
+}
+.choose_us .card .card-body:hover{
+    background-color:#41405a;
+    color:white;
+}
+.choose_us h3{
+    text-align:center;
+}
+.choose_us{
+    padding:4% 10%;
+}
+/* choose us section ends here */
+/* expert section starts here */
+.expert-team{
+    padding:4% 10%;
+}
+.expert-team h3{
+    text-align:center;
+}
+.expert-team .card .card-body h5{
+    text-align:center;
+}
+.expert-team .link-div i{
+    padding:7px;
+    color:white;
+    background-color:black;
+    transition:.4s ease-in-out;
+    
+}
+.expert-team .link-div i:hover{
+    background-color:#2394e1;
+    cursor:pointer;
+}
+.card_1{
+    position:relative;
+    overflow:hidden;
+}
+.link-div{
+    margin-top:6rem;
+}
+.link-div{
+    position:absolute;
+    left:5rem;
+    bottom:-100rem;
+    transition:.4s all;
+     visibility:hidden;
+}
+.card_1:hover .link-div{
+   bottom:0;
+   visibility:visible;
+}
+/* expert section ends here */
+/* review section starts here */
+.client-review .fa-quote-right{
+    color:#b0c1e3;
+    display:flex;
+    justify-content:center;
+}
+.card-container .fa-star{
+    color:#2394e1;
+}
+.client-review .card-container-div{
+    position:relative;
+    border:1px solid black;
+    height:350px;
+    transition:.4s all;
+}
+.client-review .card-container-div:hover{
+    background-color:rgba(0,0,0,0.6);
+    color:white;
+}
+.client-review .card-container{
+    position:absolute;
+    top:0;
+    text-align:center;
+    transform:translateY(21px);
+    transition:.4s ease-in-out;
+    width:100%;
+    height:100%;
+}
+.client-review{
+    padding:4% 10%;
+}
+/* review section ends here */
+.contact-us{
+    padding:5% 19%;
+}
+.contact-us .my-form{
+    border:2px solid black;
+    padding:23px 11px;
+}
+.my_inp{
+    margin-left:4px;
+    border:2px solid;
+    transition:.4s ease-in-out;
+}
+.my_inp_2{
+    border:2px solid;
+    transition:.4s ease-in-out;
+}
+::placeholder{
+    text-indent:3px;
+    padding:10px 0;
+}
+.contact-us textarea{
+    border:2px solid;
+   resize: none;
+}
+.send-msg{
+    border:none;
+    padding:7px;
+    border:2px solid black;
+}
+.indention{
+    text-indent:5px;
+}
+.my_inp:focus{
+    background-color:black;
+    color:white;
+}
+.my_inp_2:focus{
+    background-color:black;
+    color:white;
+}
+.my-form textarea{
+    transition:.4s ease-in-out;
+}
+.my-form textarea:focus{
+    background-color:black;
+} 
+.my_form_color{
+    background-color:#41405a;
+}
+/* main section ends here */
+/* footer section starts here */
+footer{
+    padding:4% 10%;
+    background-color:#cecece;
+}
+.foot-first ul li a{
+    text-decoration:none;
+    color:black;
+}
+.foot-first ul li{
+    margin-top:0.3rem;
+}
+.foot-span{
+    color:#2394e1;
+    
+}
+.foot-link-div i{
+    padding-left:0.5rem;
+    padding:5px;
+    background-color:black;
+    color:white;
+}
+/* footer section ends here */
